@@ -2,13 +2,15 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="../main.css">
-        <title>Hello World</title>
+        <title>Group Form</title>
         <meta charset="UTF-8">
     </head>
     <body>
         <div id="wrapper">
             <div id="h_bground"></div>
-            <p>Hello World</p>
+            
+            
+            
             <footer>
                 <div id="footer">
                     <p class="copyright">
