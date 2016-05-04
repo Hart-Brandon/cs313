@@ -23,7 +23,7 @@
         my friends that have moved far away from me. Having a dedicated game night
         has made it really easy to stay caught up with what everyone is doing.</p>
     <p> I want to wish everyone good luck the semester! Have fun!</p>
-    <p>Brandon Hart</p>
+    <p> Brandon Hart</p>
     </div><!--close bio-->
 </div><!--close content-->
 <?php include ('view/footer.php') ?>
