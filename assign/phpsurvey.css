@@ -1,0 +1,45 @@
+html {
+   margin:0;
+   background-color:azure;
+   padding-left:2%;
+}
+
+p {
+    font-size:50px;
+}
+
+h1 {
+    font-size:40px;
+}
+
+span {
+    font-size:25px;
+    font-style:italic;
+    text-align:center;
+}
+
+td, th {
+    border:1px solid #999999;
+    padding:3px;
+}
+
+table {
+    border-collapse:collapse;
+    width:350px;
+}
+
+th {
+    height:35px;
+}
+
+td.left {
+    text-align:left;
+}
+
+form.left {
+    text-align:left;
+}
+
+#stat {
+    text-align:center;
+}

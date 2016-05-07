@@ -1,5 +1,3 @@
-
-
 html {
    height:100%;
    width:100%;
@@ -112,3 +110,16 @@ span {
     width:100%;
     height:250px;
 }
+// END main stylesheet
+
+// BEGIN survey.php and result.php stylesheet
+h5 .results {
+    text-align:center;
+}
+
+h3 {
+    text-align:center;
+    padding-top:300px;
+    clear:both;
+}
+// END survey.php and result.php stylesheet
