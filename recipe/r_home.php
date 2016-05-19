@@ -5,5 +5,5 @@
         <title>Recipe Repository</title>
     </head>
     <body>
-        k;ugahd
+        kugahd
 <?php include ('view/r_footer.php') ?>
