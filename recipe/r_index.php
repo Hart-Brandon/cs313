@@ -9,21 +9,13 @@ $errors = array();
 if ($action == NULL) {
     $action = filter_input(INPUT_GET, 'action');
     if ($action == NULL) {
-        $action = 'home';
+        $action = 'recipe';
     }
 }
 
-switch ($action) {
-    case 'home':
-        (include 'home.php');
-        break;
-        
-    case 'assignments':
-        (include 'assignments.php');
-        break;
-    
+switch ($action) {    
     case 'recipe':
-        (include 'recipe/r_index.php');
+        (include 'r_home.php');
         break;
 }
 ?>

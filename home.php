@@ -1,3 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
 <?php include ('view/header.php') ?>
 <div id="content">
     <div id="photo">
