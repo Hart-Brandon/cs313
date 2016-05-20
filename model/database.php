@@ -1,18 +1,18 @@
 <?php
 
     /**
-     * Localhost connection settings
+     * Production connection settings
      */
-//    $dsn = 'mysql:host=localhost;dbname=hartscre_recipes';
-//    $username = 'mgs_user';
-//    $password = 'pa55word';
+    $dsn = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/;dbname=cs313';
+    $username = 'adminlTPsP4X';
+    $password = 'lNuWHc1u6wUc';
 
     /**
-     * Production connection settings
+     * Localhost connection settings
      */    
-    $dsn = 'mysql:host=localhost;dbname=hartscre_recipes';
-    $username = 'hartscre_admin';
-    $password = 'Simalaya1';
+//    $dsn = 'mysql:host=localhost;dbname=hartscre_recipes';
+//    $username = 'hartscre_admin';
+//    $password = 'Simalaya1';
 
     try {
         $db = new PDO($dsn, $username, $password);
