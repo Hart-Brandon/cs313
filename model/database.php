@@ -3,7 +3,7 @@
     /**
      * Production connection settings
      */
-    $dsn = 'mysql://$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/;dbname=cs313';
+    $dsn = 'mysql:host=//$OPENSHIFT_MYSQL_DB_HOST:$OPENSHIFT_MYSQL_DB_PORT/;dbname=cs313';
     $username = 'adminlTPsP4X';
     $password = 'lNuWHc1u6wUc';
 
