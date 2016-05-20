@@ -3,7 +3,7 @@
     /**
      * Localhost connection settings
      */
-//    $dsn = 'mysql:host=localhost;dbname=my_guitar_shop1';
+//    $dsn = 'mysql:host=localhost;dbname=hartscre_recipes';
 //    $username = 'mgs_user';
 //    $password = 'pa55word';
 
@@ -16,6 +16,7 @@
 
     try {
         $db = new PDO($dsn, $username, $password);
+        //echo "Connected successfully"; 
     } catch (PDOException $e) {
         echo $error_message = $e->getMessage();
         include('database_error.php');
