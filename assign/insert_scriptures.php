@@ -4,7 +4,7 @@
     $dbUser = "";
     $dbPassword = "";
 
-     $dbName = "cs313";
+     $dbName = "group";
 
      $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 

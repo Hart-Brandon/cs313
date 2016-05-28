@@ -36,12 +36,12 @@ function add_ingredients($recipeID, $ingredientName, $ingredientAmount) {
     }
 }
 
-function update_ingredients($recipeID, $ingredientName, $ingredientAmount) {
+function update_ingredients($ingredientName, $ingredientAmount) {
     global $db;
     $query = 'UPDATE ingredients
-              SET ingredientName = :ingredientName
-              SET ingredientAmount = :ingredientAmount
-              WHERE recipeID = :recipeID';
+              SET ingredientName = :ingredientName, 
+                  ingredientAmount = :ingredientAmount
+              WHERE recipeID = 6';
     
     try {
         $statement = $db->prepare($query);

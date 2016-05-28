@@ -72,12 +72,12 @@ function get_user_id($recipeID) {
     }
 }
 
-function update_recipe($recipeID, $recipeName, $recipeInstructions) {
+function update_recipe($recipeName, $recipeInstructions) {
     global $db;
     $query = 'UPDATE recipes
-              SET recipeName = :recipeName
-              SET recipeInstructions = :recipeInstructions
-              WHERE recipeID = :recipeID';
+              SET recipeName = :recipeName, 
+                  recipeInstructions = :recipeInstructions
+              WHERE recipeID = 6';
     
     try {
         $statement = $db->prepare($query);

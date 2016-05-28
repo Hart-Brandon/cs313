@@ -81,8 +81,8 @@ switch ($action) {
         $ingredient = $_POST['r_ingredient'];
         $amount = $_POST['r_amount'];
         
-        update_recipe($u_recipe_id, $recipe_name, $instructions);
-        update_ingredients($u_recipe_id, $ingredient, $amount);
+        update_recipe($recipe_name, $instructions);
+        update_ingredients($ingredient, $amount);
         
         $results = get_recipe_list();
         (include 'recipe_list.php');
