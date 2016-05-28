@@ -40,7 +40,7 @@
 //    $dsn = 'mysql:host=localhost;dbname=hartscre_recipes';
 //    $username = 'hartscre_admin';
 //    $password = 'Simalaya1';
-
+//
 //    try {
 //        $db = new PDO($dsn, $username, $password);
 //        //echo "Connected successfully"; 

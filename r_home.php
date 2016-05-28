@@ -8,9 +8,9 @@
             
             <p>IN PROGRESS</p>
             <h4>Add New Recipes</h4>
-            <h4>Edit Personal Recipes</h4>
             
             <p>ON HOLD</p>
+            <h4>Edit Personal Recipes</h4>
             <h4>User Login</h4>
             
             <p>COMPLETED</p>

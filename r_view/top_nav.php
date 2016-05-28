@@ -7,7 +7,7 @@
             Recipe List
         </a>
         &nbsp
-        <a href="?action=add" title="Add Recipe">
+        <a href="?action=add_form" title="Add Recipe">
             Add Recipe
         </a>
     </nav>
