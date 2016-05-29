@@ -72,20 +72,20 @@ function get_user_id($recipeID) {
     }
 }
 
-function update_recipe($recipeID, $recipeName, $recipeInstructions) {
+function update_recipe($recipeID, $recipeName, $instructions) {
     global $db;
-    $query = "UPDATE recipes 
+    $query = 'UPDATE recipes 
               SET recipeName = :recipeName,
-                  recipeInstructions = :recipeInstructions
-              WHERE recipeID = :recipeID";
+                  instructions = :instructions
+              WHERE recipeID = :recipeID';
     
-    try {
-        $statement = $db->prepare($query);
-        $statement->bindValue(':recipeName', $recipeName);
-        $statement->bindValue(':recipeInstructions', $recipeInstructions);
+    try {      
+        $statement = $db->prepare($query);       
+        $statement->bindParam(':recipeName', $recipeName);
+        $statement->bindParam(':instructions', $instructions);
+        $statement->bindParam(':recipeID', $recipeID);
         $statement->execute();
-        $statement->closeCursor();
-    } catch (PDOException $e) {
+    } catch (Exception $e) {
         $error_message = $e->getMessage();
         display_db_error($error_message);
     }

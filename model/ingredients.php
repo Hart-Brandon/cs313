@@ -45,10 +45,10 @@ function update_ingredients($recipeID, $ingredientName, $ingredientAmount) {
     
     try {
         $statement = $db->prepare($query);
+        $statement->bindValue(':recipeID', $recipeID);
         $statement->bindValue(':ingredientName', $ingredientName);
         $statement->bindValue(':ingredientAmount', $ingredientAmount);
         $statement->execute();
-        $statement->closeCursor();
     } catch (PDOException $e) {
         $error_message = $e->getMessage();
         display_db_error($error_message);

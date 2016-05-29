@@ -81,12 +81,6 @@ switch ($action) {
         $ingredientName = $_POST['r_ingredient'];
         $ingredientAmount = $_POST['r_amount'];
         
-        print_r($recipeID . "<br/>");
-        print_r($recipeName . "<br/>");
-        print_r($instructions . "<br/>");
-        print_r($ingredientName . "<br/>");
-        print_r($ingredientAmount . "<br/>");
-        
         update_recipe($recipeID, $recipeName, $instructions);
         update_ingredients($recipeID, $ingredientName, $ingredientAmount);
         

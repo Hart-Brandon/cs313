@@ -18,9 +18,8 @@
             <?php include ('r_view/top_nav.php') ?>
         <h1>Edit Recipe</h1>
         <form action='?action=update&amp;recipeID=<?php echo $e_id ?>' method='post'>
-            <input type='hidden' name='id' value='<?php $e_id ?>'>
             Recipe Name: <input type='text' value="<?php echo $e_name; ?>" name='r_name'><br/><br/>
-            Instructions: <br/><input type='text' value='<?php echo $e_instructions ?>' name='r_instructions'></textarea><br/><br/>
+            Instructions: <br/><input type='text' value='<?php echo $e_instructions ?>' name='r_instructions'><br/><br/>
             <?php echo $r_instructions['recipeName']; ?>
             Ingredient Name: <input type='text' value='<?php echo $e_iName ?>' name='r_ingredient'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
