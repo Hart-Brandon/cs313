@@ -81,7 +81,7 @@
 	}
 
 ?>
-<a href="insert_scriptures.php">Back to Insert Page</a>
+<a href="insert_scriptures.php">Add New Scripture</a>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php
-require_once('model/database.php');
+require('model/database.php');
 require('model/recipe.php');
 require('model/ingredients.php');
 require('model/users.php');
@@ -75,14 +75,20 @@ switch ($action) {
         break;
     
     case 'update':
-        $u_recipe_id = filter_input(INPUT_GET, 'recipeID', FILTER_VALIDATE_INT);
-        $recipe_name = $_POST['r_name'];  
+        $recipeID = filter_input(INPUT_GET, 'recipeID', FILTER_VALIDATE_INT);
+        $recipeName = $_POST['r_name'];  
         $instructions = $_POST['r_instructions'];
-        $ingredient = $_POST['r_ingredient'];
-        $amount = $_POST['r_amount'];
+        $ingredientName = $_POST['r_ingredient'];
+        $ingredientAmount = $_POST['r_amount'];
         
-        update_recipe($recipe_name, $instructions);
-        update_ingredients($ingredient, $amount);
+        print_r($recipeID . "<br/>");
+        print_r($recipeName . "<br/>");
+        print_r($instructions . "<br/>");
+        print_r($ingredientName . "<br/>");
+        print_r($ingredientAmount . "<br/>");
+        
+        update_recipe($recipeID, $recipeName, $instructions);
+        update_ingredients($recipeID, $ingredientName, $ingredientAmount);
         
         $results = get_recipe_list();
         (include 'recipe_list.php');

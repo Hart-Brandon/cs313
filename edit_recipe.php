@@ -10,15 +10,15 @@
                 <?php $e_instructions = $result['instructions'] ?>
             <?php endforeach; ?>
             
-            <?php foreach ($r_ingredients as $result) : ?>
-                <?php $e_iName = $result['ingredientName'] ?>
-                <?php $e_iAmount = $result['ingredientAmount'] ?>
+            <?php foreach ($r_ingredients as $results) : ?>
+                <?php $e_iName = $results['ingredientName'] ?>
+                <?php $e_iAmount = $results['ingredientAmount'] ?>
             <?php endforeach; ?>
             
             <?php include ('r_view/top_nav.php') ?>
         <h1>Edit Recipe</h1>
         <form action='?action=update&amp;recipeID=<?php echo $e_id ?>' method='post'>
-            <input type='hidden' name='id' value='<?php $recipe_id ?>'>
+            <input type='hidden' name='id' value='<?php $e_id ?>'>
             Recipe Name: <input type='text' value="<?php echo $e_name; ?>" name='r_name'><br/><br/>
             Instructions: <br/><input type='text' value='<?php echo $e_instructions ?>' name='r_instructions'></textarea><br/><br/>
             <?php echo $r_instructions['recipeName']; ?>
