@@ -9,9 +9,9 @@
             Recipe Name: <input type='text' name='r_name'><br/><br/>
             Instructions: <br/><input type='text' name='r_instructions'></textarea><br/><br/>
             
-            Ingredient Name: <input type='text' name='r_ingredient[]'>
+            Ingredient Name: <input type='text' name='r_ingredient'>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Amount: <input type='text' name='r_amount[]'><br/>
+            Amount: <input type='text' name='r_amount'><br/>
 <!--            <div id='ingredient_list'></div>
             <input type='button' value='Add Ingredient' id='button' onclick="add_ingredient();add_amount();">-->
             <br/><br/>
