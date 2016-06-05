@@ -10,8 +10,8 @@
             Instructions: <br/><textarea rows ='5' cols='74' name='r_instructions'></textarea>
             <br/><br/>
             
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-            <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
             
             <div id="main">
                 <input type="button" id="btAdd" value="Add Ingredient" class="bt" />
