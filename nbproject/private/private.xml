@@ -3,7 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Applications/MAMP/htdocs/cs313/view/footer.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/edit_recipe.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/model/ingredients.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/index.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/new_recipe_form.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/model/database.php</file>
+            <file>file:/Applications/MAMP/htdocs/cs313/model/users.php</file>
         </group>
     </open-files>
 </project-private>
