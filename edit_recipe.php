@@ -40,6 +40,7 @@
             <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
             
             <div id="main">
+                Button not working. Should be adding extra text boxes. <br/>
                 <input type="button" id="btAdd" value="Add Ingredient" class="bt">
                 <!--<input type="button" id="btRemove" value="Remove Element" class="bt" />-->
                 <input type="button" id="btRemoveAll" value="Clear All" class="bt">
