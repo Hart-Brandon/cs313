@@ -3,18 +3,19 @@
     </head>
         <body>
             <?php include ('r_view/top_nav.php') ?>
-            <h1>View Recipe Instructions</h1>
+            <h1>
 
             <?php foreach ($recipe_instructions as $result) : ?>
                 <?php echo $result['recipeName'] ?>
             <?php endforeach; ?>            
 
-            <?php echo "<br/><br/> Submitted By: " . $user_name['userName'] ?>
-
+            </h1>
+            <!--?php echo "<br/><br/> Submitted By: " . $user_name['userName'] ?>-->
+            <h3>Instructions</h3>
             <p><?php foreach ($recipe_instructions as $result) : ?>
                 <?php echo $result['instructions'] ?>
             <?php endforeach; ?></p>
-
+            <h3>Ingredients</h3>
             <?php foreach ($recipe_ingredients as $result) : ?>
                 <li>
                         <?php echo $result['ingredientName'] . "&nbsp;&nbsp;&nbsp;&nbsp;" . $result['ingredientAmount']; ?>

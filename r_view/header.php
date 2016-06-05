@@ -1,5 +1,5 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" type="text/css" href="r_main.css">
         <meta charset="UTF-8">

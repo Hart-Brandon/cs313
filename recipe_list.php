@@ -1,4 +1,4 @@
-<?php include ('view/r_footer.php') ?>
+<?php include ('r_view/header.php') ?>
         <title>View Recipes</title>
     </head>
         <body>
@@ -6,7 +6,7 @@
     <h1>Recipe List</h1>
     <ol>
     <?php foreach ($results as $result) : ?>
-        <li>
+        <li id="list">
             <a href="?action=view_recipe&amp;recipeID=<?php echo $result['recipeID']; ?>">
                 <?php echo $result['recipeName']; ?>
             </a>

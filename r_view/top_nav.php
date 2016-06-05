@@ -1,4 +1,4 @@
-    <nav> 
+    <nav id="top_nav"> 
         <a href="?action=recipe" title="Home">   
             Home
         </a>

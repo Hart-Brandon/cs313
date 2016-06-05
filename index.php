@@ -47,7 +47,10 @@ switch ($action) {
         $amount = $_POST['r_amount'];
         
         $recipe_id = add_recipe_instructions($user_id, $recipe_name, $instructions);
-        add_ingredients($recipe_id, $ingredient, $amount);
+        
+        for ($i = 0; $i < count($ingredient); $i++) {
+            add_ingredients($recipe_id, $ingredient[$i], $amount[$i]);
+        }
         
         $results = get_recipe_list();
         (include 'recipe_list.php');
@@ -82,7 +85,11 @@ switch ($action) {
         $ingredientAmount = $_POST['r_amount'];
         
         update_recipe($recipeID, $recipeName, $instructions);
-        update_ingredients($recipeID, $ingredientName, $ingredientAmount);
+        delete_ingredients($recipeID);
+        
+        for ($i = 0; $i < count($ingredientName); $i++) {
+            add_ingredients($recipeID, $ingredientName[$i], $ingredientAmount[$i]);
+        }
         
         $results = get_recipe_list();
         (include 'recipe_list.php');
